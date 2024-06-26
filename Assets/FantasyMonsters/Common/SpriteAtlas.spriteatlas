@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a263ecd2c8d13c74e9cce387bbecff9c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 10bcb629e03823f4bbb5ae2ea2091897: -524195514793821918
+    - 10bcb629e03823f4bbb5ae2ea2091897: 2828032271763480184
+    - 10bcb629e03823f4bbb5ae2ea2091897: -1828946549344447192
+    - 10bcb629e03823f4bbb5ae2ea2091897: -7252215782646672311
+    - 10bcb629e03823f4bbb5ae2ea2091897: 624974917677838921
+    - 10bcb629e03823f4bbb5ae2ea2091897: -4550084578846169200
+    - 10bcb629e03823f4bbb5ae2ea2091897: -5673618120071735642
+    - 10bcb629e03823f4bbb5ae2ea2091897: -1381065623766834176
+    - 10bcb629e03823f4bbb5ae2ea2091897: -4257976045669282404
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -524195514793821918, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: 2828032271763480184, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: -1828946549344447192, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: -7252215782646672311, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: 624974917677838921, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: -4550084578846169200, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: -5673618120071735642, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: -1381065623766834176, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  - {fileID: -4257976045669282404, guid: 10bcb629e03823f4bbb5ae2ea2091897, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Leg
+  - Weapon
+  - HeadNormal
+  - HeadAngry
+  - ArmR
+  - ArmL
+  - Body
+  - HeadDead
+  - FistR
+  m_RenderDataMap: {}
+  m_Tag: SpriteAtlas
+  m_IsVariant: 0
