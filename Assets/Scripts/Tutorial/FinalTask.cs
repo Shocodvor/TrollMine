@@ -8,20 +8,35 @@ namespace tutorial
     public class FinalTask : Iteacher
 
     {
-        public Animator CharacterAnimator { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        private Animator charaterAnimator;
 
-        public void Enter()
+        public FinalTask(Animator charaterAnimator)
         {
-
+            this.charaterAnimator = charaterAnimator;
         }
+
+        public FinalTask() { }
+       
+
+        public Animator CharacterAnimator { get ; set ; }
+
+  
 
         public Animator Enter(Animator ani)
         {
-            throw new System.NotImplementedException();
+            ani.SetTrigger("Action");
+            ani.SetTrigger("Attack");
+            return CharacterAnimator;
         }
 
-        public void Exit()
+    
+
+        public Animator Exit(Animator ani)
         {
+
+
+          
+            return CharacterAnimator;
 
         }
 

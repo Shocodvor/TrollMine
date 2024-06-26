@@ -30,27 +30,6 @@ namespace tutorial
         }
 
    
-        public void Enter()
-        {
-           
-           
-        }
-
-   
-        public void Exit()
-        {
-
-          
-
-
-
-
-
-
-        }
-
-    
-
         public void Update()
         {
           
@@ -63,8 +42,15 @@ namespace tutorial
           
            
             ani.SetInteger("State", 2);
-            return _animTeacher;    
+            return CharacterAnimator;    
 
+
+        }
+
+        public Animator Exit(Animator ani)
+        {
+            ani.SetInteger("State", 1);
+            return CharacterAnimator;
 
         }
     }

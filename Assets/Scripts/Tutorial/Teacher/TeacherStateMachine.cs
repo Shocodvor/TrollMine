@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Buld.Scripts;
+using System.Collections;
+using UnityEngine.UIElements;
 
 
 
@@ -27,32 +29,19 @@ namespace tutorial
 
     }
 
-    public void Start()
-    {
-
-        FirsrTask FirstTask = new FirsrTask(CharaterAnimator);
-       
-    }
-
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
+        public void Start()
         {
 
-            SetFirstTask();
+            FirsrTask FirstTask = new FirsrTask(CharaterAnimator);
 
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-
+            StartCoroutine(SetSecBahavior());
            
 
 
-        }
 
-    }
+        }
+       
+    
 
         public override void InitialiseBehavior()
         {
@@ -60,6 +49,7 @@ namespace tutorial
             this.behaivorMap[typeof(FirsrTask)] = new FirsrTask();
             this.behaivorMap[typeof(SecondTask)] = new SecondTask();
             this.behaivorMap[typeof(FinalTask)] = new FinalTask();
+            this.behaivorMap[typeof(IdleTask)] = new IdleTask();
 
         }
 
@@ -86,15 +76,23 @@ namespace tutorial
 
         var behavior = this.GetBehavoir<FinalTask>();
         this.SetBehavior(behavior);
-
-
     }
+
+        public void IdleTask()
+        {
+
+
+            var behavior = this.GetBehavoir<IdleTask>();
+            this.SetBehavior(behavior);
+        }
+
+
 
         public override void SetBehavior(Iteacher behavior)
         {
 
             if (this.behavaiorCurrent != null)
-                this.behavaiorCurrent.Exit();
+                this.behavaiorCurrent.Exit(CharaterAnimator);
 
 
             this.behavaiorCurrent = behavior;
@@ -111,9 +109,25 @@ namespace tutorial
 
         public override void SetBehaviorDeffault()
         {
-            var BehDeffault = this.GetBehavoir<SecondTask>();
+            var BehDeffault = this.GetBehavoir<FirsrTask>();
             this.SetBehavior(BehDeffault);
         }
+
+        IEnumerator SetSecBahavior()
+
+        {
+
+            yield return new WaitForSeconds(1.0f);
+
+            SetSecTask();
+
+            yield return new WaitForSeconds(5.0f);
+
+            IdleTask();
+
+        }
+
+
     }
 
 

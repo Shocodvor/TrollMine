@@ -5,10 +5,11 @@ namespace tutorial
     public interface Iteacher
     {
 
-        public Animator CharacterAnimator { get; set; } 
+        public Animator CharacterAnimator { get; set; }
 
-      Animator Enter(Animator ani);
-        void Exit();
+
+        Animator Enter(Animator ani);
+        Animator Exit(Animator ani);
         void Update (); 
 
 
