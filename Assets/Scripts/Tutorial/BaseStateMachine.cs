@@ -12,7 +12,7 @@ namespace tutorial
     {
         public abstract Dictionary <Type, Iteacher> behaivorMap { get; set; }
         public abstract Iteacher behavaiorCurrent { get; set; }
-        public abstract FirsrTask first { get; set; }
+    
 
     public abstract void InitialiseBehavior();
         

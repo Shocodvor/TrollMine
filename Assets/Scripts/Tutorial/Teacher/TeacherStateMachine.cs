@@ -17,7 +17,7 @@ namespace tutorial
         public override Iteacher behavaiorCurrent { get ; set; }
 
 
-        public override FirsrTask first { get ; set; }
+
 
         public Animator CharaterAnimator;
 
@@ -36,12 +36,11 @@ namespace tutorial
 
             StartCoroutine(SetSecBahavior());
            
-
-
-
         }
-       
-    
+
+
+
+
 
         public override void InitialiseBehavior()
         {

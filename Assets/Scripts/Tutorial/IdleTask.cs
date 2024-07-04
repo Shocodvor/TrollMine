@@ -26,7 +26,7 @@ namespace tutorial
         public Animator Enter(Animator ani)
         {
 
-            Debug.Log("Idle");
+          
             return CharacterAnimator;
            
         }
@@ -43,7 +43,7 @@ namespace tutorial
 
         void Iteacher.Update()
         {
-            throw new System.NotImplementedException();
+           
         }
     }
 

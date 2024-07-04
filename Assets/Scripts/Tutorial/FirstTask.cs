@@ -8,7 +8,7 @@ namespace tutorial
 {
    
 
-    public class FirsrTask : MonoBehaviour, Iteacher
+    public class FirsrTask : Iteacher
 
     {
 
